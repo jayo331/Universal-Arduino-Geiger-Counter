@@ -9,6 +9,7 @@ The idea behind this project is to have a universal-ish and relatively simple ge
 ## BOM:
 
 - Arduino Nano (Uno works too)
+
 - 128x32 OLED display
 - Push button (x2) 
 - Geiger-Muller Tube
@@ -47,7 +48,7 @@ Misc:
 
 The optional part is mandatory if you want a complete portable unit, however you can build a functional geiger counter just by using the basic component. In case you are using the module depend on what module are using you only need to connect the output pulse pin to Arduino pin 2, 5v/VCC, and ground. If you have decided to go the hard way you have to build the tube interface and make the connection by yourself, for the high voltage power supply i still suggest you using some pre-made 400v module. By searching on google i found this: 
 
-
+![Geiger-Counter-kit](https://user-images.githubusercontent.com/17268735/188287614-a6f1a719-df5a-466f-b613-65c30b21cc44.png)
 
 Source: https://www.electroschematics.com/diy-geiger-counter/
 
