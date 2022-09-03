@@ -53,25 +53,17 @@ The optional part is mandatory if you want a complete portable unit, however you
 Source: https://www.electroschematics.com/diy-geiger-counter/
 
 
-
-
-
-
-## Menu Instruction / How to use it:
+## How to use it:
  
+In the code you can see this line: #define instruction false. If you set it to true at every boot the instruction will be printed on the screen, however this option will slow down some operation (boot and set menu) because the entire instructions on how to use the menu will be printed. If you dont care about time you can enable this option, this will help you to remember how to use it every time. Since the step to set a tube is pretty simple, by default i set this option to false. 
 
-CIRCUITRY (aliexpress module, basic principle, already made schematic)
+1) When off press the screen and buzzer buttons together.
+2) Turn on the device using the power switch or by plugging the cable on the Arduino.
+- If you did this steps right on the screen will appear the SET MENU text.
+3) Once the text appeared release the two buttons. On the screen will appear the name of the first tube on the list.
+4) Press screen / buzzer button to navigate the menu. Once you selected your tube just wait, after 6 second the selected tube will be automatically set and the conversion factor displayed.
 
-
-RESULT: (precision, test, 
-
-FEATURES: (easy, universal, 
-
-
-
-NOTE:
-Maybe the code is not too optimized since i want to maintain a certant ratio between code readability and execution speed. Since this
-is not a metrology instrument i didn't care too much about ultra high precision or extra complex circuitry. In the software i try avoid
-unnecessary operation during the interrupt call or during timer overflow call ,at the start i plan to use another timer for the display
-refresh but since i dont need high precision i ended up using the main loop function for this task.
+##EXTRA NOTE:
+The goal is to keep this project as cheap and simple as possible, i didn't really over engineered the device, that's why i didn't use extra complex circuitry or expensive coax connector / cable for the probe. I used a simple insulated audio jack, DONT USE THE METAL ONES since in case of a failure the metal case can conduct the 400v into you, even if the power supply is not earth referenced  we dont want i any case 400v on something that the user can easily touch. Same with the high voltage probe cable, i didnt use high voltage coax cable but a generic shielded cable. In general for the circuit i suggest you to just use common sense for the high voltage part, if you dont have enough experience whith that just use pre-build module. In the software in order to improve speed i avoided unnecessary operation during the interrupt call or during timer overflow call, again i didnt really over engineered it. 
+ 
 
