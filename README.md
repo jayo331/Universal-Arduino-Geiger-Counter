@@ -4,8 +4,19 @@
 
 The idea behind this project is to have a universal-ish and relatively simple geiger counter that can be build with cheap and easy to find component. If you are new to this subject since we are dealing with high voltage i strongly suggest you to buy a pre-made geiger tube module (those that can be found on Aliexpress), this can save you time and money in case you fry something with the high voltage. Again, in this project we are dealing with relatively high voltage (~400v) that (even if at low current) can hurt you, some high voltage modules on the internet include high capacity capacitors on the 400v output, those can deliver high voltage high current pulse capable of seriously hurt you and destroy your equipment. 
 
+## Supported Tube:
 
-
+- SBM20
+- SI29BG
+- SBM19/STS6
+- STS5
+- SI22G
+- SI3BG
+- SBM-21
+- LND712
+- BT9
+- SI1G
+  
 ## BOM:
 
 - Arduino Nano (Uno works too)
